@@ -43,11 +43,11 @@ class App:
         GButton_700["command"] = self.GButton_700_command
 
     def GButton_791_command(self):
-        print("command")
+        print("Nahee")
 
 
     def GButton_700_command(self):
-        print("command")
+        print("Dekhear")
 
 if __name__ == "__main__":
     root = tk.Tk()
