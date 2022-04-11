@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'monoalphabetic-de', component: MonoalphabeticCipherDEComponent},
 
   { path: 'shift-de', component: ShiftCipherDEComponent},
-  { path: 'shift-ed', component: ShiftCipherENComponent},
+  { path: 'shift-en', component: ShiftCipherENComponent},
 
   { path: 'vigenere-en', component: VigenereCipherENComponent},
   { path: 'vigenere-de', component: VigenereCipherDEComponent},
