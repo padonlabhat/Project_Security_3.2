@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VigenereCipherComponent } from './codecopy/vigenere-cipher.component';
+import { CodecopyComponent } from './codecopy/codecopy.component';
 import { RSADEComponent } from './rsa-de/rsa-de.component';
 import { RSAENComponent } from './rsa-en/rsa-en.component'; 
 import { MonoalphabeticCipherENComponent } from './monoalphabetic-cipher-en/monoalphabetic-cipher-en.component';
@@ -10,7 +10,7 @@ import { ShiftCipherENComponent } from './shift-cipher-en/shift-cipher-en.compon
 import { VigenereCipherENComponent } from './vigenere-cipher-en/vigenere-cipher-en.component';
 import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-de.component';
 const routes: Routes = [
-  { path: 'codecopy', component: VigenereCipherComponent},
+  { path: 'codecopy', component: CodecopyComponent},
 
   { path: 'rsa-en', component: RSAENComponent},
   { path: 'rsa-de', component: RSADEComponent},
@@ -18,10 +18,10 @@ const routes: Routes = [
   { path: 'monoalphabetic-en', component: MonoalphabeticCipherENComponent},
   { path: 'monoalphabetic-de', component: MonoalphabeticCipherDEComponent},
 
-  { path: 'shift-de', component: ShiftCipherDEComponent },
+  { path: 'shift-de', component: ShiftCipherDEComponent},
   { path: 'shift-ed', component: ShiftCipherENComponent},
 
-  { path: 'vigenere-en', component: VigenereCipherENComponent },
+  { path: 'vigenere-en', component: VigenereCipherENComponent},
   { path: 'vigenere-de', component: VigenereCipherDEComponent},
 ];
 

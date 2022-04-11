@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-vigenere-cipher',
-  templateUrl: './vigenere-cipher.component.html',
-  styleUrls: ['./vigenere-cipher.component.css']
+  selector: 'app-codecopy',
+  templateUrl: './codecopy.component.html',
+  styleUrls: ['./codecopy.component.css']
 })
-export class VigenereCipherComponent implements OnInit{
+export class CodecopyComponent implements OnInit{
   constructor(){}
   ngOnInit(){}
   CT='ABCD'

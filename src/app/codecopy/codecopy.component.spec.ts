@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VigenereCipherComponent } from './vigenere-cipher.component';
+import { CodecopyComponent } from './codecopy.component';
 
-describe('VigenereCipherComponent', () => {
-  let component: VigenereCipherComponent;
-  let fixture: ComponentFixture<VigenereCipherComponent>;
+describe('CodecopyComponent', () => {
+  let component: CodecopyComponent;
+  let fixture: ComponentFixture<CodecopyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VigenereCipherComponent ]
+      declarations: [ CodecopyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VigenereCipherComponent);
+    fixture = TestBed.createComponent(CodecopyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VigenereCipherComponent } from './codecopy/vigenere-cipher.component';
+import { CodecopyComponent } from './codecopy/codecopy.component';
 import { RSAENComponent } from './rsa-en/rsa-en.component';
 import { RSADEComponent } from './rsa-de/rsa-de.component';
 import { MonoalphabeticCipherENComponent } from './monoalphabetic-cipher-en/monoalphabetic-cipher-en.component';
@@ -16,7 +16,7 @@ import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-
 @NgModule({
   declarations: [
     AppComponent,
-    VigenereCipherComponent,
+    CodecopyComponent,
     RSAENComponent,
     RSADEComponent,
     MonoalphabeticCipherENComponent,
