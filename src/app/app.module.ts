@@ -13,6 +13,7 @@ import { ShiftCipherENComponent } from './shift-cipher-en/shift-cipher-en.compon
 import { VigenereCipherENComponent } from './vigenere-cipher-en/vigenere-cipher-en.component';
 import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-de.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
