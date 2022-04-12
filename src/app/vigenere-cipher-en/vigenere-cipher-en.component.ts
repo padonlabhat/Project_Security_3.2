@@ -16,12 +16,17 @@ export class VigenereCipherENComponent implements OnInit {
  
   // key = null
   test1(CT :string,key1 :string){
+    
     this.CipherText=''
     this.CT = CT.toUpperCase();
     key1 = key1.toUpperCase();
     console.log('Hello World!');
     var str = this.CT
     var arr = str.split("");
+    for (i = 0; i < arr.length; i++) {
+      key1=key1.concat(key1)
+      }
+    console.log('key 1 :'+key1);
     var Ptext = [];
     var Pnumber = [];
     console.log("arr :"+arr);
@@ -32,11 +37,11 @@ export class VigenereCipherENComponent implements OnInit {
     
     var i;
     var Ctext = [];
-    console.log("key : "+key);
-
-
+    console.log("key : "+key1);
+  
+    
   for (i = 0; i < arr.length; i++) {
- 
+    
   
     keytext[i] = key[i]
 
