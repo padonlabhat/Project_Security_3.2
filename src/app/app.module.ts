@@ -12,6 +12,7 @@ import { ShiftCipherDEComponent } from './shift-cipher-de/shift-cipher-de.compon
 import { ShiftCipherENComponent } from './shift-cipher-en/shift-cipher-en.component';
 import { VigenereCipherENComponent } from './vigenere-cipher-en/vigenere-cipher-en.component';
 import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-de.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

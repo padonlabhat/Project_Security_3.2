@@ -9,6 +9,7 @@ import { ShiftCipherDEComponent } from './shift-cipher-de/shift-cipher-de.compon
 import { ShiftCipherENComponent } from './shift-cipher-en/shift-cipher-en.component';
 import { VigenereCipherENComponent } from './vigenere-cipher-en/vigenere-cipher-en.component';
 import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-de.component';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 const routes: Routes = [
   { path: 'codecopy', component: CodecopyComponent},
 
@@ -26,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),NgbPaginationModule, NgbAlertModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
