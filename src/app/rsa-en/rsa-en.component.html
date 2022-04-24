@@ -1,1 +1,53 @@
-<p>rsa-en works!</p>
+
+<!doctype html>
+<html lang="en">
+
+<body>
+    <br><br>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <div class="btn btn-dark"
+                        (click)="showDiv.calcu = !showDiv.calcu;showDiv.current = false;showDiv.next = false">
+                        Calculate
+                    </div>
+                    <div class="btn btn-dark"
+                        (click)="showDiv.current = !showDiv.current;showDiv.calcu = false;showDiv.next = false">
+                        Message
+                    </div>
+                    <div class="btn btn-dark" 
+                        (click)="showDiv.next = !showDiv.next;showDiv.calcu = false;showDiv.current = false">
+                        Decliption
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngIf="showDiv.calcu">
+                <!-- <div class="col-md">
+                    <input #P type="text" value="" placeholder="Input P"><br>
+                    <input #Q type="text" value="" placeholder="Input Q"><br>
+                    <button type="button" (click)="cal(P.value,Q.value)">ดำเนินการ</button>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">N</div>
+                        <div class="col">R</div>
+                        <div class="col">E</div>
+                        <div class="col">D</div>
+                        <div class="w-100"></div>
+                        <div class="col">{{N}}</div>
+                        <div class="col">{{R}}</div>
+                        <div class="col">{{E}}</div>
+                        <div class="col">{{D}}</div>
+                    </div>
+                </div> -->
+            </div>
+            <div *ngIf="showDiv.next">Next week data.</div>
+            <div *ngIf="showDiv.current">Current week data</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -14,6 +14,7 @@ import { VigenereCipherENComponent } from './vigenere-cipher-en/vigenere-cipher-
 import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-de.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,FormsModule,ReactiveFormsModule
+    NgbModule,FormsModule,ReactiveFormsModule, HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
