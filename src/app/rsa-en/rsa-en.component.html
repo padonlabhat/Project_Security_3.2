@@ -1,41 +1,26 @@
+<br>
 <!doctype html>
 <html lang="en">
 
 <body>
-    <br><br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="btn-group">
-                    <div class="btn btn-dark" (click)="showDiv.encryp = !showDiv.decryp;showDiv.decryp = false;">
-                        Encryption
-                    </div>
-                    <div class="btn btn-dark" (click)="showDiv.decryp = !showDiv.encryp;showDiv.encryp = false;">
-                        Decryption
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div *ngIf="showDiv.encryp">
-                <br>
-                <form>
-                    <input [(ngModel)]="text.text" name="text">
-                    <button type="submit" (click)="Rsa_en()">Encryption</button>
-                  </form>
-                  
-            </div>
-            <div *ngIf="showDiv.decryp">
-                <form>
-                    <div>{{data.text}}</div>
-                    <button type="submit" (click)="Rsa_de()">Decryption</button>
-                    <div>{{data_}}</div>
-                  </form>
-                
-            </div>
-        </div>
+    
+    <div class="text_">
+        <p style="text-align:center">RSA</p>
     </div>
+    <div class="row">
+        <textarea [(ngModel)]="text.text" name="text" class="col-md-12" rows="6" placeholder="Your Message">
+        </textarea>
+        <div class="col-md-4"></div>
+        <button class="btn btn-primary  col-md-4 " type="submit" (click)="Rsa_en()">Encryption</button>
+    </div>
+
+    <div class="row">
+        <textarea name="user_message" class="col-md-12" rows="6" placeholder="Cipher text">{{data.text}}</textarea>
+        <div class="col-md-4"></div>
+        <button class="btn btn-danger  col-md-4 " type="submit" (click)="Rsa_de()">Decryption</button>
+        <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text">{{data_}}</textarea>
+    </div>
+    
 </body>
 
 </html>
