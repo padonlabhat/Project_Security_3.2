@@ -1,8 +1,8 @@
 import { HttpClient,HttpHeaders,HttpParams } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnDestroy } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
 import { Post } from './post';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-rsa-en',
@@ -13,19 +13,44 @@ export class RSAENComponent implements OnInit {
 
 readonly ROOT_url = 'http://127.0.0.1:8000/api/rsa'
 posts : Observable<Post[]> | undefined;
-
-constructor(private http: HttpClient) { }
+text: any = {};
+data_: string = ""
+data: any= {
+  "text":"",
+  "d":0,
+  "n":0
+};
+constructor(private appService: AppService) { }
 
 ngOnInit(): void {
 }
 
-getpost(){
-  this.posts = this.http.get<Post[]>(this.ROOT_url + '/encryption')
+
+Rsa_en() {
+  this.appService.getRsa_en(this.text).subscribe((res)=>{
+    console.log(res)
+    this.data.text = res.text;
+    this.data.d = res.d;
+    this.data.n = res.n;
+    // console.log(this.data.d)
+  });
 }
 
+
+Rsa_de() {
+  this.appService.getRsa_de(this.data).subscribe((res)=>{
+
+    console.log(res)
+    this.data_ = res.text;
+
+  }
+  ); 
+}
+
+
+
 showDiv = {
-  calcu : false,
-  current : false,
-  next : false
+  encryp : false,
+  decryp : false,
 }
 }

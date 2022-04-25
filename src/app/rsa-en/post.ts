@@ -1,5 +1,5 @@
 export interface Post{
 
-    test : string;
+    text : string;
     
 }
