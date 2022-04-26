@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Post } from './rsa-en/post';
+import { Sent } from './rsa-de/sent';
 import { map, catchError } from 'rxjs/operators';
 import { from, Observable, throwError } from 'rxjs';
 @Injectable({
@@ -36,5 +37,4 @@ export class AppService {
         })
       )
   }
-
 }

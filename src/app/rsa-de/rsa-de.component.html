@@ -1,25 +1,24 @@
+<br>
 <!doctype html>
 <html lang="en">
 <body>
-    <!-- <h1>Hello, world!</h1> --><br><br>
-    <div class="col-md">
-        <input #P type = "text" value="" placeholder="Input P"><br>
-        <input #Q type = "text" value="" placeholder="Input Q"><br>
-        <button type = "button" (click)="cal(P.value,Q.value)">ดำเนินการ</button>
+    <div class="text_">
+        <p style="text-align:center">RSA</p>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">N</div>
-            <div class="col">R</div>
-            <div class="col">E</div>
-            <div class="col">D</div>
-            <div class="w-100"></div>
-            <div class="col">{{N}}</div>
-            <div class="col">{{R}}</div>
-            <div class="col">{{E}}</div>
-            <div class="col">{{D}}</div>
-        </div>
+    <div class="row">
+        <input class="col-md-2"[(ngModel)]="data.d" name="d" value="" placeholder="Input d" style="text-align:center"> : : 
+        <input class="col-md-2"[(ngModel)]="data.n" name="n" value="" placeholder="Input n" style="text-align:center">
+     </div>
+    <br>
+    <div class="row">
+        <textarea [(ngModel)]="data.text" name="text" class="col-md-12" rows="6" placeholder="Your Message" >
+        </textarea>
+        <div class="col-md-4"></div>
+        <button class="btn btn-success  col-md-4 " type="submit" (click)="Rsa_de_()">Decryption</button>
+        <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text">{{data_}}</textarea>
     </div>
+    
+
 </body>
 </html>
 

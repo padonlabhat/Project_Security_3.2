@@ -1,0 +1,50 @@
+
+.text_ p{
+    font-size: 400%;
+    font-weight: 400;
+    text-transform: none;
+    color: rgb(199, 5, 5);
+    text-align: justify;
+    margin: auto;
+}
+about-us {
+    background-image:linear-gradient(rgba(18, 172, 234, 0.42),     rgba(0, 191, 255, 0.55));
+    background-size: cover;
+    background-attachment: scroll;
+    color: #fff;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#about-us h1 {
+    font-size: 400%;
+    font-weight: 400;
+    text-transform: none;
+    color: #666;
+    text-align: justify;
+    margin: auto;
+}
+
+
+.about-us h2 {
+    font-size: 750%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #666;
+    line-height: 80px;
+    padding-top: 120px;
+    margin: auto;
+}
+
+#about-us .block {
+    position: relative;
+    padding: 310px 0px 0px;
+    text-align: center;
+    margin: auto;
+}
+input{
+    background-origin: padding-box;
+    color: rgb(104, 94, 233);
+}
