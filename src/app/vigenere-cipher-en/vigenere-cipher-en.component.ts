@@ -64,7 +64,7 @@ export class VigenereCipherENComponent implements OnInit {
       else if (keytext[i]=="Q"){keynumber[i]=16}
       else if (keytext[i]=="R"){keynumber[i]=17}
       else if (keytext[i]=="S"){keynumber[i]=18}
-      else if (keytext[i]=="P"){keynumber[i]=19}
+      else if (keytext[i]=="T"){keynumber[i]=19}
       else if (keytext[i]=="U"){keynumber[i]=20}
       else if (keytext[i]=="V"){keynumber[i]=21}
       else if (keytext[i]=="W"){keynumber[i]=22}

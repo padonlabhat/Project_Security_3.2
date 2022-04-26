@@ -8,9 +8,9 @@ describe('MonoalphabeticCipherDEComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MonoalphabeticCipherDEComponent ]
+      declarations: [MonoalphabeticCipherDEComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
