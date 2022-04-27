@@ -1,7 +1,29 @@
-<p>CodeCopy works!</p>
-<input #PT type = "text" value="" placeholder="Input PT">
-<button type = "button" (click)="test1(PT.value)">ดำเนินการ</button>
-<span>
-    CT is {{CT}}
-    <!-- Pnumber is {{}} -->
-</span>
+<div class="container">
+    <div class="row">
+        <div class="col" style="text-align: center;">
+            <p>CodeCopy works!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="input">
+                <input #PT type="text" value="" placeholder="Input PT">
+            </div>
+        </div>
+        <div class="col">
+                <button class="btn btn-primary btn-sm" type="button" (click)="test1(PT.value)">
+                    <div class="text" >
+                        ดำเนินการ
+                    </div>
+                </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="result">
+                CT is {{CT}}
+                <!-- Pnumber is {{}} -->
+            </div>
+        </div>
+    </div>
+</div>

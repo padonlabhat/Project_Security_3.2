@@ -1,0 +1,19 @@
+.row {
+    align-items: center;
+}
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: justify;
+}
+input {
+    padding-left: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: justify;
+}
+.result{
+    margin-top: 10px;
+}

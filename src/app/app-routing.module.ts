@@ -9,8 +9,11 @@ import { ShiftCipherDEComponent } from './shift-cipher-de/shift-cipher-de.compon
 import { ShiftCipherENComponent } from './shift-cipher-en/shift-cipher-en.component';
 import { VigenereCipherENComponent } from './vigenere-cipher-en/vigenere-cipher-en.component';
 import { VigenereCipherDEComponent } from './vigenere-cipher-de/vigenere-cipher-de.component';
+import { HomeComponent } from './home/home.component';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent},
   { path: 'codecopy', component: CodecopyComponent},
 
   { path: 'rsa-en', component: RSAENComponent},
