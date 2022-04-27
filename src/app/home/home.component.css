@@ -6,13 +6,13 @@
 }
 .btn:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    color: white;
-    background-color: blue;
+    /* color: white;
+    background-color: blue; */
 }
-button {
+/* button {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
     justify-content: center;
     text-align: justify;
-}
+} */
