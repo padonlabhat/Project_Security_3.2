@@ -1,20 +1,38 @@
 <div class="container">
+    <div class="row" style="text-align: center;">
+        <div class="col">
+            <h2>Monoalphabetic Encryption</h2>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
-            <h1>Monoalphabetic</h1>
+            <input #PT type="text" value="" placeholder="Input PT">
+        </div>
+        <div class="col">
+            <span>
+                CT is {{CT}}
+                <!-- Pnumber is {{}} -->
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input #KEY type="text" value="" placeholder="Input key">
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-outline-success btn-sm" (click)="test1(PT.value,KEY.value)">ดำเนินการ</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <span>
+                Cipher text is {{CipherText}}
+            </span>
+        </div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col">
+            <a href="monoalphabetic-de">Decryption</a>
         </div>
     </div>
 </div>
-
-
-<input #PT type = "text" value="" placeholder="Input PT">
-<span>
-    CT is {{CT}}
-    <!-- Pnumber is {{}} -->
-</span>
-<input #KEY type = "text" value="" placeholder="Input key">
-<button type = "button" (click)="test1(PT.value,KEY.value)">ดำเนินการ</button>
-<span>
-    Cipher text is {{CipherText}}
-    
-</span>

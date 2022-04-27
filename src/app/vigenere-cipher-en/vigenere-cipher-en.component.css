@@ -1,0 +1,17 @@
+.row {
+    margin-top: 10px;
+    align-items: center;
+}
+/* button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: justify;
+} */
+input {
+    padding-left: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: justify;
+}

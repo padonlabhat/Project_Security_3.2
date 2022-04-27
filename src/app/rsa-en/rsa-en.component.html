@@ -1,24 +1,37 @@
-<br>
-<!doctype html>
-<html lang="en">
-<body>
-    <div class="text_">
-        <p style="text-align:center">RSA</p>
+<div class="container">
+    <div class="row" style="text-align:center">
+        <div class="col">
+            <h1>RSA Encryption</h1>
+        </div>
     </div>
     <div class="row">
-        <textarea [(ngModel)]="text.text" name="text" class="col-md-12" rows="6" placeholder="Your Message">
-        </textarea>
-        <div class="col-md-4"></div>
-        <button class="btn btn-primary  col-md-4 " type="submit" (click)="Rsa_en()">Encryption</button>
+        <div class="col">
+            <textarea [(ngModel)]="text.text" name="text" rows="6" placeholder="Your Message"></textarea>
+        </div>
     </div>
-
     <div class="row">
-        <textarea name="user_message" class="col-md-12" rows="6" placeholder="Cipher text">{{data.text}}</textarea>
-        <div class="col-md-4"></div>
-        <button class="btn btn-danger  col-md-4 " type="submit" (click)="Rsa_de()">Decryption</button>
-        <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text">{{data_}}</textarea>
+        <div class="col">
+            <button class="btn btn-primary" type="submit" (click)="Rsa_en()">Encryption</button>
+        </div>
     </div>
-    
-</body>
-
-</html>
+    <div class="row">
+        <div class="col">
+            <textarea name="user_message" rows="6" placeholder="Cipher text">{{data.text}}</textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-danger" type="submit" (click)="Rsa_de()">Decryption</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea name="user_message" rows="4" placeholder="Plain text">{{data_}}</textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a href="rsa-de">Decryption</a>
+        </div>
+    </div>
+</div>
