@@ -1,13 +1,18 @@
-
-.text_ p{
-    font-size: 400%;
-    font-weight: 400;
-    text-transform: none;
-    color: rgb(199, 5, 5);
-    text-align: justify;
-    margin: auto;
+.row {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    width: 400px;
 }
-about-us {
+
+textarea {
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: justify;
+}
+/* about-us {
     background-image:linear-gradient(rgba(18, 172, 234, 0.42),     rgba(0, 191, 255, 0.55));
     background-size: cover;
     background-attachment: scroll;
@@ -43,4 +48,4 @@ about-us {
     padding: 310px 0px 0px;
     text-align: center;
     margin: auto;
-}
+} */

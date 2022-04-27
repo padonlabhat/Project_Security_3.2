@@ -1,24 +1,34 @@
-<br>
-<!doctype html>
-<html lang="en">
-<body>
-    <div class="text_">
-        <p style="text-align:center">RSA</p>
+<div class="container">
+    <div class="row" style="text-align:center">
+        <div class="col">
+            <h1>RSA Decryption</h1>
+        </div>
     </div>
     <div class="row">
-        <input class="col-md-2"[(ngModel)]="data.d" name="d" value="" placeholder="Input d" style="text-align:center"> : : 
-        <input class="col-md-2"[(ngModel)]="data.n" name="n" value="" placeholder="Input n" style="text-align:center">
-     </div>
-    <br>
-    <div class="row">
-        <textarea [(ngModel)]="data.text" name="text" class="col-md-12" rows="6" placeholder="Your Message" >
-        </textarea>
-        <div class="col-md-4"></div>
-        <button class="btn btn-success  col-md-4 " type="submit" (click)="Rsa_de_()">Decryption</button>
-        <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text">{{data_}}</textarea>
+        <div class="col">
+            <input [(ngModel)]="data.d" name="d" value="" placeholder="Input d" style="text-align:center">
+        </div>
+        <div class="col" style="text-align:center">
+            : :
+        </div>
+        <div class="col">
+            <input [(ngModel)]="data.n" name="n" value="" placeholder="Input n" style="text-align:center">
+        </div>
     </div>
-    
-
-</body>
-</html>
-
+    <div class="row">
+        <div class="col">
+            <textarea [(ngModel)]="data.text" name="text" class="col-md-12" rows="6"
+                placeholder="Your Message"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="text-align:center">
+            <button class="btn btn-success" type="submit" (click)="Rsa_de_()">Decryption</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text">{{data_}}</textarea>
+        </div>
+    </div>
+</div>

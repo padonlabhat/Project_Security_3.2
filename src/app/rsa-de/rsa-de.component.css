@@ -1,4 +1,7 @@
-
+.row {
+    margin-top: 10px;
+    align-items: center;
+}
 .text_ p{
     font-size: 400%;
     font-weight: 400;
