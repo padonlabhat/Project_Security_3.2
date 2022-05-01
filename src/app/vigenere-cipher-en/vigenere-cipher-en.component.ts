@@ -141,7 +141,7 @@ export class VigenereCipherENComponent implements OnInit {
         else if (Pnumber[i]==23){Ctext[i]="X"}
         else if (Pnumber[i]==24){Ctext[i]="Y"}
         else if (Pnumber[i]==25){Ctext[i]="Z"}
-        // else Ctext[i]=Ptext[i]
+        else Ctext[i]=Ptext[i]
        
        this.CipherText=this.CipherText+Ctext[i]
     }
