@@ -22,3 +22,14 @@
     color: white;
     background-color: blue;
 }
+.img{
+    width: auto;
+    height: 870px;
+    background-color: black;
+    background-image: url('../assets/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: block; */
+    /* position: absolute; */
+}

@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="">
-      <!-- <img src="src/assets/focus.png" width="30" height="30" alt=""> -->
       Security
     </a>
     <div class="navbar-collapse collapse" id="navbarSupportedContent">
@@ -21,34 +20,26 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="rsa-en">RSA</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-            RSA
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="rsa-de">Decryption</a>
-            <a class="dropdown-item" href="rsa-en">Encryption</a>
-          </div>
-        </li> -->
       </ul>
     </div>
   </div>
 </nav>
 
-<br>
-<!-- Highlight Card -->
 <div class="content">
-  <div class="card ">
-    <div class="row">
-      <div class="col-1">
-        <div class="btn" (click)="onBack()">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  <div class="img">
+    <br>
+    <div class="card ">
+      <div class="row">
+        <div class="col-1">
+          <div class="btn" (click)="onBack()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
+      <div class="card-body">
+        <router-outlet></router-outlet>
+      </div>
+      <br>
     </div>
-    <div class="card-body">
-      <router-outlet></router-outlet>
-    </div>
-    <br>
   </div>
 </div>
