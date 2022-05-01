@@ -24,12 +24,13 @@
 }
 .img{
     width: auto;
-    height: 870px;
+    height: auto;
     background-color: black;
     background-image: url('../assets/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom:20%;
     /* display: block; */
     /* position: absolute; */
 }
