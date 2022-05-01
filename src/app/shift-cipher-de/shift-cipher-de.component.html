@@ -4,7 +4,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <input #PT type="text" value="" placeholder="Input PT">
+            <input #PT type="text" value="" placeholder="Input PT" pattern="[a-zA-Z]">
         </div>
         <div class="col">
             <span>
@@ -14,7 +14,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <input #KEY type="text" value="" placeholder="Input key">
+            <input #KEY id="key" type="number" value="" placeholder="Input key" pattern="[0-9]" min="0" max="25" maxlength="2">
         </div>
         <div class="col">
             <button type="button" class="btn btn-outline-success btn-sm" (click)="test1(PT.value,KEY.value)">ดำเนินการ</button>

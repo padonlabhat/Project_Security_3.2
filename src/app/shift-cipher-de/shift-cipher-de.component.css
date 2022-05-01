@@ -15,3 +15,7 @@ input {
     justify-content: center;
     text-align: justify;
 }
+
+#key{
+    width: 148px;
+}

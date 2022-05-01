@@ -6,19 +6,19 @@
     </div>
     <div class="row">
         <div class="col">
-            <input [(ngModel)]="data.d" name="d" value="" placeholder="Input d" style="text-align:center">
+            <input id="key" type="number" [(ngModel)]="data.d" name="d" value="" placeholder="Input d" style="text-align:center">
         </div>
         <div class="col" style="text-align:center">
             : :
         </div>
         <div class="col">
-            <input [(ngModel)]="data.n" name="n" value="" placeholder="Input n" style="text-align:center">
+            <input id="key" type="number" [(ngModel)]="data.n" name="n" value="" placeholder="Input n" style="text-align:center">
         </div>
     </div>
     <div class="row">
         <div class="col">
             <textarea [(ngModel)]="data.text" name="text" class="col-md-12" rows="6"
-                placeholder="Your Message"></textarea>
+                placeholder="Your Message" pattern="[a-zA-Z]"></textarea>
         </div>
     </div>
     <div class="row">
@@ -28,7 +28,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text">{{data_}}</textarea>
+            <textarea name="user_message" class="col-md-12" rows="4" placeholder="Plain text" disabled>{{data_}}</textarea>
         </div>
     </div>
 </div>

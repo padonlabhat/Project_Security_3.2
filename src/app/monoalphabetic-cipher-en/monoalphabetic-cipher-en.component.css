@@ -18,3 +18,7 @@ input {
 .result{
     margin-top: 10px;
 }
+
+#key{
+    width: 148px;
+}
