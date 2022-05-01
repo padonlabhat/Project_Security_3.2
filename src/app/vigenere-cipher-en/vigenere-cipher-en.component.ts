@@ -21,8 +21,9 @@ export class VigenereCipherENComponent implements OnInit {
     this.CT = CT.toUpperCase();
     key1 = key1.toUpperCase();
     console.log('Hello World!');
-    var str = this.CT
+    var str = this.CT.replace(/\s/g, "");
     var arr = str.split("");
+
     for (i = 0; i < arr.length; i++) {
       key1=key1.concat(key1)
       }
@@ -109,6 +110,7 @@ export class VigenereCipherENComponent implements OnInit {
         else if (Ptext[i]=="X"){Pnumber[i]=23+keynumber[i]}
         else if (Ptext[i]=="Y"){Pnumber[i]=24+keynumber[i]}
         else if (Ptext[i]=="Z"){Pnumber[i]=25+keynumber[i]}
+        else if (Ptext[i]==" "){Ctext[i]=" "}
         else Ptext[i]=Ptext[i];
         Pnumber[i]=Pnumber[i]%26
 
@@ -139,7 +141,7 @@ export class VigenereCipherENComponent implements OnInit {
         else if (Pnumber[i]==23){Ctext[i]="X"}
         else if (Pnumber[i]==24){Ctext[i]="Y"}
         else if (Pnumber[i]==25){Ctext[i]="Z"}
-        else Ctext[i]=Ptext[i]
+        // else Ctext[i]=Ptext[i]
        
        this.CipherText=this.CipherText+Ctext[i]
     }

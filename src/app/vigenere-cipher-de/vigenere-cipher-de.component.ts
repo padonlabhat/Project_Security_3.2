@@ -19,7 +19,7 @@ export class VigenereCipherDEComponent implements OnInit {
     this.CT = CT.toUpperCase();
     key1 = key1.toUpperCase();
     console.log('Hello World!');
-    var str = this.CT
+    var str = this.CT.replace(/\s/g, "");
     var arr = str.split("");
     for (i = 0; i < arr.length; i++) {
       key1 = key1.concat(key1)
