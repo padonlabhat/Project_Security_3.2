@@ -18,8 +18,17 @@ export class VigenereCipherENComponent implements OnInit {
   test1(CT :string,key1 :string){
     
     this.CipherText=''
-    this.CT = CT.toUpperCase();
+
     key1 = key1.toUpperCase();
+
+    if (key1<'A' || key1>'Z')
+    {
+      CT = 'KEY_ERROR'
+    }
+
+    this.CT = CT.toUpperCase();
+    
+
     console.log('Hello World!');
     var str = this.CT.replace(/\s/g, "");
     var arr = str.split("");
@@ -31,8 +40,7 @@ export class VigenereCipherENComponent implements OnInit {
     var Ptext = [];
     var Pnumber = [];
     console.log("arr :"+arr);
-    var keyy = key1
-    var key = keyy.split("");
+    var key = key1.split("");
     var keytext = [];
     var keynumber = [];
     
