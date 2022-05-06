@@ -17,20 +17,26 @@ export class ShiftCipherENComponent implements OnInit {
   // key = null
   test1(CT :string,key1 :string){
     this.CipherText=''
+    var key 
+    key =(Number(key1))
+    if(key<1 || key>26){
+     key = 26;
+     CT = 'KEY ERROR'
+    }
     this.CT = CT.toUpperCase();
+    
     console.log('Hello World!');
     var str = this.CT
     var arr = str.split("");
     var Ptext = [];
     var Pnumber = [];
     console.log("arr :"+arr);
-    var key 
-    key =(Number(key1))
+   
     
     var i;
     var Ctext = [];
     console.log("key : "+key);
-
+    
     for (i = 0; i < arr.length; i++) {
     
         console.log(arr[i]);
@@ -94,7 +100,7 @@ export class ShiftCipherENComponent implements OnInit {
         else if (Pnumber[i]==24){Ctext[i]="Y"}
         else if (Pnumber[i]==25){Ctext[i]="Z"}
         else Ctext[i]=Ptext[i]
-       
+      
        this.CipherText=this.CipherText+Ctext[i]
     }
     console.log("Ctext : "+Ctext);
