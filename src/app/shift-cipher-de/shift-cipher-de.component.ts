@@ -17,6 +17,12 @@ export class ShiftCipherDEComponent implements OnInit {
   // key = null
   test1(CT :string,key1 :string){
     this.CipherText=''
+    var key 
+    key =(Number(key1))
+    if(key<1 || key>26){
+     key = 26;
+     CT = 'KEY ERROR'
+    }
     this.CT = CT.toUpperCase();
     console.log('Hello World!');
     var str = this.CT
